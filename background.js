@@ -1,0 +1,2 @@
+//chrome.tabs.onUpdated.addListener(function(){chrome.tabs.executeScript({file: 'script.js'});});
+//document.addEventListener('DOMNodeInserted',function(){chrome.tabs.executeScript({file: 'script.js'});})

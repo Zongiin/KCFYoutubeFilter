@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "boi",
+	"version": "1",
+	"permissions": [
+		"storage",
+		"activeTab",
+		"tabs",
+		"https://*/*"
+	],
+	"description":"ext",
+	/*"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	}*/
+	"content_scripts": [
+		{
+			"matches": ["https://www.youtube.com/*"],
+			"js": ["script.js"]
+		}
+	],
+	"options_page": "options.html"
+}
